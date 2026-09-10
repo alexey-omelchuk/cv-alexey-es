@@ -97,8 +97,8 @@ export const EncryptedText = ({
             key={i}
             className={cn(isRevealed ? revealedClassName : encryptedClassName)}
           >
-            {/* Usamos espacio de no ruptura para que el layout no salte */}
-            {char === " " ? "\u00A0" : char}
+            {/* Usamos espacio normal para que sí pueda hacer saltos de línea (word-wrap) en móviles */}
+            {char === " " ? " " : char}
           </span>
         );
       })}

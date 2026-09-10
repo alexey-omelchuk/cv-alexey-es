@@ -45,11 +45,12 @@ export const EducationSection = () => {
             </h2>
             
             {/* Subtítulo: Ajuste de ancho y centrado real */}
-            <div className="text-white/90 mt-6 uppercase tracking-[0.1em] md:tracking-[0.3em] text-[10px] italic w-full max-w-[300px] md:max-w-none mx-auto leading-relaxed text-center opacity-80">
-            <b className="block">
+            <div className="text-white/90 mt-6 uppercase tracking-normal md:tracking-[0.3em] text-[10px] italic max-w-[280px] md:max-w-none mx-auto leading-relaxed break-words whitespace-normal text-center opacity-80">
+            <b className="block w-full">
                 <EncryptedText 
                 text="No busco que me den todo masticado, busco problemas reales" 
                 revealDelayMs={30} 
+                className="block w-full text-center"
                 />
             </b>
             </div>

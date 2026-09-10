@@ -111,11 +111,12 @@ export const CertificatesSection = () => {
   </h2>
 
   {/* Subtítulo: Eliminado el max-width restrictivo y mejorado el tracking responsivo */}
-  <div className="text-white/90 mt-6 uppercase tracking-[0.1em] md:tracking-[0.3em] text-[9px] md:text-[10px] italic w-full max-w-[90vw] md:max-w-3xl mx-auto leading-relaxed text-center opacity-80">
-    <b className="inline-block w-full"> {/* inline-block ayuda a que EncryptedText calcule bien el espacio */}
+  <div className="text-white/90 mt-6 uppercase tracking-normal md:tracking-[0.3em] text-[9px] md:text-[10px] italic max-w-[280px] md:max-w-none w-full mx-auto leading-relaxed break-words whitespace-normal text-center opacity-80">
+    <b className="block w-full"> {/* inline-block sustituido por block para centrado estricto */}
       <EncryptedText 
         text="Certificaciones oficiales que complementan mis estudios" 
         revealDelayMs={30} 
+        className="block w-full text-center"
       />
     </b>
   </div>
